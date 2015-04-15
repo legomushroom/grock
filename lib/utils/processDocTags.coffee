@@ -155,6 +155,17 @@ renderDocTagsForSegment = (segment) ->
     for tag in sections.example
       output.push "", "Example:", "", humanize.gutterify(tag.markdown, 4)
 
+  if sections.codepen?
+    for tag in sections.codepen
+      valueArr = tag.markdown.split ' '
+      pen = valueArr[0]; user = valueArr[1] or 'sol0mka'
+      codepen = "<p data-height=\"300\" data-theme-id=\"14132\"
+                 data-slug-hash=\"#{pen}\" data-default-tab=\"result\"
+                 data-user=\"#{user}\" class='codepen'>
+                 <a href='http://codepen.io/#{user}/pen/#{pen}/'>See on Codepen</a>
+                </p>"
+      output.push "", "", "", codepen
+
   segment.comments = output
   return segment
 

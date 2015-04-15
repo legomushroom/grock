@@ -32,7 +32,6 @@ module.exports = DOC_TAGS =
   description:
     section:     'description'
     markdown:    '{value}'
-
   copyright:
     section:     'metadata'
     markdown:    '&copy; {value}'
@@ -40,6 +39,10 @@ module.exports = DOC_TAGS =
     valuePrefix: 'under'
     section:     'metadata'
     markdown:    'licensed under {value}'
+  codepen:
+    valuePrefix: 'under'
+    section:     'codepen'
+    markdown:    '{value}'
 
   internal:
     section:     'access'

@@ -7,9 +7,17 @@ To see how it works, just have a look at [the documentation rendered from this r
 [![build status](https://travis-ci.org/killercup/grock.png?branch=master)](https://travis-ci.org/killercup/grock)
 [![dependency version](https://david-dm.org/killercup/grock.png)](https://david-dm.org/killercup/grock)
 
+## Changes in this fork by Pascal
+
+Increases performance by quite a bit (5s instead of 17s on my machine).
+
+- Add @codepen tag for embed pens. Usage: @codepen pen-hash(ogOYJj) [user]
+
+Also adds better SCSS detection and some CSS fixes.
+
 ## Install
 
-Install globally using `npm install --global grock` and invoke anywhere using `grock --glob 'your/*.files'`.
+Install globally using `npm i --g git+https://github.com/legomushroom/grock.git` and invoke anywhere using `grock --glob 'your/*.files'`.
 
 Or use it as a (dev-)dependency in your project and use the `package.json` script section to run it, e.g. with `"scripts": {"docs": "grock"}` and using `npm run docs` (read more about this [here](http://substack.net/task_automation_with_npm_run)).
 

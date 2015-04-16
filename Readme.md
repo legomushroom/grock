@@ -7,13 +7,9 @@ To see how it works, just have a look at [the documentation rendered from this r
 [![build status](https://travis-ci.org/killercup/grock.png?branch=master)](https://travis-ci.org/killercup/grock)
 [![dependency version](https://david-dm.org/killercup/grock.png)](https://david-dm.org/killercup/grock)
 
-## Changes in this fork by Pascal
-
-Increases performance by quite a bit (5s instead of 17s on my machine).
+## Changes in this fork by LegoMushroom
 
 - Add @codepen tag for embed pens. Usage: @codepen pen-hash(ogOYJj) [user]
-
-Also adds better SCSS detection and some CSS fixes.
 
 ## Install
 

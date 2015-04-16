@@ -9,7 +9,8 @@ To see how it works, just have a look at [the documentation rendered from this r
 
 ## Changes in this fork by LegoMushroom
 
-- Add @codepen tag for embed pens. Usage: @codepen pen-hash(ogOYJj) [user]
+- Add @codepen tag for embed pens.  
+  Usage: [Caption:] @codepen http://codepen.io/sol0mka/pen/ogOYJj
 
 ## Install
 

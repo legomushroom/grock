@@ -40,7 +40,6 @@ module.exports = DOC_TAGS =
     section:     'metadata'
     markdown:    'licensed under {value}'
   codepen:
-    valuePrefix: 'under'
     section:     'codepen'
     markdown:    '{value}'
 
@@ -73,6 +72,7 @@ module.exports = DOC_TAGS =
     section:     'type'
   property:
     section:     'type'
+    markdown:    'propery <span id="property-{value}">**{value}**</span>'
 
   accessor:
     section:     'flag'
@@ -109,7 +109,7 @@ module.exports = DOC_TAGS =
     markdown:    'subscribes to {value}'
   type:
     section:     'metadata'
-    markdown:    'of type _{value}_'
+    markdown:    'of type **{value}**'
 
   todo:
     section:     'todo'

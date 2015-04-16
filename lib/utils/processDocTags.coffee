@@ -157,14 +157,21 @@ renderDocTagsForSegment = (segment) ->
 
   if sections.codepen?
     for tag in sections.codepen
-      valueArr = tag.markdown.split ' '
-      pen = valueArr[0]; user = valueArr[1] or 'sol0mka'
-      codepen = "<p data-height=\"300\" data-theme-id=\"14132\"
+      link = tag.markdown.split ':'
+      header = if link.length isnt 3 then ''
+      else header = link.shift(); "<p>#{header}:</p>"
+      link = link.join(':')
+      linkArr = link.split '/'
+      protocol = linkArr[0]
+      user     = linkArr[3]
+      pen      = linkArr[5]
+      codepen = "
+                <p data-height=\"300\" data-theme-id=\"14132\"
                  data-slug-hash=\"#{pen}\" data-default-tab=\"result\"
                  data-user=\"#{user}\" class='codepen'>
-                 <a href='http://codepen.io/#{user}/pen/#{pen}/'>See on Codepen</a>
                 </p>"
-      output.push "", "", "", codepen
+      # <a href='http://codepen.io/#{user}/pen/#{pen}/'>See on Codepen</a>
+      output.push "", "", "", header + codepen
 
   segment.comments = output
   return segment
